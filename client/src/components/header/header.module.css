@@ -1,0 +1,32 @@
+.header {
+    margin: 0px;
+    padding: 0px;
+    background-color: blue;
+}
+  
+.header ul {
+      margin: 0px;
+      list-style-type: none;
+      overflow: hidden;
+}
+  
+.headerleft  {
+      float: left;
+}
+
+.headerright {
+      float: right;
+}
+    
+.header li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 8px;
+      text-decoration: none;
+}
+  
+.header li a:hover {
+    background-color: #111111;
+}
+

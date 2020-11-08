@@ -1,0 +1,32 @@
+.activityheader {
+    margin: 0px;
+    padding: 0px;
+    background-color: #666666;
+}
+  
+.activityheader ul {
+      margin: 0px;
+      list-style-type: none;
+      overflow: hidden;
+}
+  
+.activityheaderleft  {
+      float: left;
+}
+
+.activityheaderright {
+      float: right;
+}
+    
+.activityheader li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 4px;
+      text-decoration: none;
+}
+  
+.activityheader li a:hover {
+    background-color: #111111;
+}
+

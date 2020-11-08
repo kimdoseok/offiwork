@@ -1,0 +1,37 @@
+.client {
+    margin: 0px;
+    padding: 0px;
+
+    background-color: beige;
+    margin-bottom: 70px;
+}
+
+.clientrow {
+    margin-top: 40px;
+    background-color: white;
+}
+
+.clientcol {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    background-color: bisque;
+}
+
+.clientcell {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 1px;
+    border: 1px solid gray;
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    background-color: bisque;
+
+}

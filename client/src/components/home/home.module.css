@@ -1,0 +1,12 @@
+.home {
+    margin: 0px;
+    padding: 0px;
+
+    background-color: beige;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.homeleftcol {
+    background-color: bisque;
+}
