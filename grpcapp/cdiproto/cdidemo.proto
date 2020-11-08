@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package cdiproto;
+
+service Cdidemo {
+  rpc AuthUser(UserRequest) returns (ValidResponse) {}
+  rpc GetUser(UserRequest) returns (JsonResponse) {}
+  rpc GetKeyCode(SearchRequest) returns (JsonResponse) {}
+  rpc GetKeyCodeDetail(SearchRequest) returns (JsonResponse) {}
+  rpc GetKeyCodeRef(SearchRequest) returns (JsonResponse) {}
+  rpc GetICD10(SearchRequest) returns (JsonResponse) {}
+  rpc GetICD10Detail(SearchRequest) returns (JsonResponse) {}
+  rpc GetICDref(SearchRequest) returns (JsonResponse) {}
+  rpc GetDRG(SearchRequest) returns (JsonResponse) {}
+  rpc GetDRGDetail(SearchRequest) returns (JsonResponse) {}
+  rpc GetDRGref(SearchRequest) returns (JsonResponse) {}
+
+}
+
+// The request message containing the search string.
+message SearchRequest {
+  string search =1;
+  string userid =2;
+  string passwd =3;
+}
+
+message UserRequest {
+  string userid =1;
+  string passwd =2;
+}
+
+message JsonResponse {
+  string jsondata =1;
+}
+
+message ValidResponse {
+  bool valid =1;
+}

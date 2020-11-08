@@ -1,0 +1,13 @@
+p, admin, /*, *
+p, anonymous, /login, *
+p, user, /user, *
+p, user, /code, *
+p, user, /code/detail, *
+p, user, /code/ref, *
+p, user, /drg, *
+p, user, /drg/detail, *
+p, user, /drg/ref, *
+p, user, /icd10, *
+p, user, /icd10/detail, *
+p, user, /icd10/ref, *
+g, 882966, user

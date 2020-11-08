@@ -1,0 +1,29 @@
+version: '3.3'
+
+services:
+  postgres:
+    image: doseok/postgresql
+    restart: always
+    networks: 
+      offiwork:
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+  client:
+    container_name: client
+    restart: always
+    ports:
+      - "8008:8008"
+    networks: 
+      offiwork:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+    volumes:
+      - "./storage:/app/storage"
+
+
+networks:
+  offiwork:
+    driver: bridge

@@ -1,0 +1,42 @@
+version: '3.3'
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: kim7795004
+    networks: 
+      offiworks:
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+  frontend:
+    container_name: frontend
+    restart: always
+    ports:
+      - "80:80"
+    networks: 
+      offiworks:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+  client:
+    container_name: client
+    restart: always
+    ports:
+      - "8008:8008"
+    networks: 
+      offiworks:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+    volumes:
+      - "${pwd}/storage:/app/storage"
+  
+networks:
+  offiworks:
+    driver: bridge

@@ -1,0 +1,13 @@
+{
+    "DATABASES_TYPE": "pgsql",
+    "DATABASES_PGSQLDBSIM_PORT": 5432,
+    "DATABASES_PGSQLDBSIM_HOST": "postgres",
+    "DATABASES_PGSQLDBSIM_USER": "postgres",
+    "DATABASES_PGSQLDBSIM_PASSWORD": "kim7795004",
+    "DATABASES_PGSQLDBSIM_DBNAME": "offiworks",
+    "SERVERS_DYNAMIC_PORT": "8008",
+    "CASBIN_MODEL": "model.conf",
+    "CASBIN_POLICY": "policy.csv",
+    "TEST_SERVERS_RESTAPP_URL": "restapp:3333",
+    "TEST_SERVERS_GRPCTAPP_URL": "grpcapp"
+}
